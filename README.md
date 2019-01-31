@@ -2,25 +2,16 @@
 
 Deux gems supplémentaires ont été installé : gem table_print et la gem faker
 
-## Projet de Nora Bourouis et Hamdi Nassri
+## Projet de Nora Bourouis , Hamdi Nassri et Chloe Renard
 
-Cette base de données a été créé pour un site d'éducation en ligne. Dans ce site il y aura des élèves qui peuvent s'inscrire à un seul cours. Un cours pourra avoir plusieurs élèves.
+Cette base de données a été créé pour permettre aux promeneurs de rentabiliser leur temps en sortant des chiens moyennant une rémunération bien évidemment.
 
-Pour se faire, on a crée une base de donnée avec 2 modèles : celui d'un élève (Student), celui d'un cours (Lecture). La relation entre ces bases est de 1,n (one to many).
-
+Pour se faire, on a crée une base de donnée avec 4 modèles :  dogsitter, dog, stroll, city.
 ### Description des models
-
-Le modèle élève peut s'inscrire à un cours seulement, du coup il faut inclure la foreign key de Lecture dans la création de la table.
-
-Le modèle cours ne dépend pas d'un autre modèle. En effet, il peut y avoir plusieurs élèves pour un cours ('has_many').
-
-Après avoir créer nos tables, on a verifié qu'elles étaient bien lié avec la console rails en tapant les lignes suivantes :
-
-lecture = lecture.create(title="cours1")
-student = student.new
-student.lecture = lecture
-student.save
-
+Dogsitter: permet de créer un profil de dogsitter
+Dog: permet de créer un profil de chiens à promener
+Stroll: table intermédiaire permettant d'enregistrer toutes les promenades ayant eu lieu
+City: permet d'attribuer une ville dans le profil de dog et dogsitter empêchant ainsi que quelqu'un de New York ait à promener un chien se trouvant à Paris
 ### Autres infos
 
 Dans un fichier seeds.rb, on a généré automatiquement des éléments pour chaques models grâce à la gem faker. Pour réaliser l'action de ce fichier il suffit de taper 'rails db:seed ' dans la console.
