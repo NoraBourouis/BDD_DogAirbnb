@@ -1,9 +1,9 @@
 require 'faker'
-=begin
+
 5.times do
   city = City.create!(city_name: Faker::GameOfThrones.city)
 end
-=end
+
 10.times do
   dog = Dog.create!(name: Faker::Dog.name, city_id: rand(1..5))
   dogsit = Dogsitter.create!(name: Faker::Name.name, city_id: rand(1..5))
