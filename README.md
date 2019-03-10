@@ -2,7 +2,7 @@
 
 Deux gems supplémentaires ont été installé : gem table_print et la gem faker
 
-## Projet de Nora Bourouis , Hamdi Nassri et Chloe Renard
+## Projet de Nora Bourouis et Hamdi Nassri 
 
 Cette base de données a été créé pour permettre aux promeneurs de rentabiliser leur temps en sortant des chiens moyennant une rémunération bien évidemment.
 
